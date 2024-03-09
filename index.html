@@ -29,7 +29,13 @@ images:
   <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
 
-
+<style>
+  @media (max-width: 600px) {
+    .mobile-break {
+      display: inline;
+    }
+  }
+</style>
   
 
 </head>
@@ -41,14 +47,16 @@ images:
 		<div class="wrapper">
 
 			<!-- WYSIWYG -->
-
+       
 		<div class="position-absolute">
-				<h2 class="big no-margin"><strong>{{ page.main-title }}</strong></h2>
-				<h2>{{ page.subtitle }}</h2> 
-                     <div class="entry-summary">
-							<p>{{ page.description }}</p>
-						</div><br />
-			</div>
+      <h2 class="big no-margin">
+        <strong>
+          <span class="name-part" style="display: inline-block; max-width: 100%;">Radhika</span>
+          <br style="display: none;" class="mobile-break">
+          <span class="name-part" style="display: inline-block; max-width: 100%;">&#8226;Ayyangar</span>
+        </strong>
+      </h2>
+		</div>
 			
 			<div class="gallery fullscreen-gallery kenburns-gallery">
 
@@ -74,7 +82,7 @@ images:
 		</div><!-- END .wrapper -->
 		
 	</section>
-
+    <br />
 <div id="footer" role="contentinfo">
 		<ul class="soc-icons">
 
