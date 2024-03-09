@@ -2,8 +2,8 @@
 title: Radhika Ayyangar - CG Artist
 email: ""
 description: "Cg Artist Portfolio"
-url: "https://radhikaayyangar.github.io"
-baseurl: "/site"
+url: "https://radhikaayyangar.com"
+baseurl: "/"
 facebook_username: ""
 twitter_username: ""
 instagram_username: ""
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://radhikaayyangar.github.io/site/gallery/"  
-  - JOURNAL: "https://radhikaayyangar.github.io/site/journal/"
-  - ABOUT: "https://radhikaayyangar.github.io/site/about/"
+  - GALLERY: "https://radhikaayyangar.com/gallery/"  
+  - JOURNAL: "https://radhikaayyangar.com/journal/"
+  - ABOUT: "https://radhikaayyangar.com/about/"
 
 # All translation keys
 translations:
