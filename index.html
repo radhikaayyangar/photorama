@@ -29,13 +29,7 @@ images:
   <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
 
-<style>
-  @media (max-width: 600px) {
-    .mobile-break {
-      display: inline;
-    }
-  }
-</style>
+
   
 
 </head>
@@ -47,100 +41,27 @@ images:
 		<div class="wrapper">
 
 			<!-- WYSIWYG -->
-       
+
 		<div class="position-absolute">
-      <h2 class="big no-margin">
-        <strong>
-          <span class="name-part" style="display: inline-block; max-width: 100%;">Radhika</span>
-          <br style="display: none;" class="mobile-break">
-          <span class="name-part" style="display: inline-block; max-width: 100%;">&#8226;Ayyangar</span>
-        </strong>
-      </h2>
-		</div>
+          <h2 class="big no-margin">
+          <strong>
+            <span class="name-part" style="display: inline-block; max-width: 100%;">Radhika</span>
+            <br style="display: none;" class="mobile-break">
+            <span class="name-part" style="display: inline-block; max-width: 100%;">&#8226;Ayyangar</span>
+          </strong>
+          </h2>
+				  <h2>{{ page.subtitle }}</h2> 
+            <div class="entry-summary">
+							<p>{{ page.description }}</p>
+						</div><br />
+			    </div>
 			
-			<div class="gallery fullscreen-gallery kenburns-gallery">
-
-				<canvas id="kenburns"></canvas>
-				
-{% for image in page.images %}  	
-
-				<figure class="gallery-item">
-					<header class='gallery-icon'>
-
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-	
-				</header>	
-				</figure>
-
-{% endfor %}
-
-				</div>
 			<!-- END WYSIWYG -->
 			
 	
 		</div><!-- END .wrapper -->
 		
 	</section>
-    <br />
-<div id="footer" role="contentinfo">
-		<ul class="soc-icons">
-
-                 {% if site.facebook_username %}
-			<li>
-   <a href="https://facebook.com/{{ site.facebook_username }}" style="
-color:#dddddd; target="_blank" title="Facebook">
-                       <i class="fa fa-facebook"></i>
-                     </span>
-</a></li>
-    {% endif %}
- {% if site.twitter_username %}
-			<li>
-   <a href="https://twitter.com/{{ site.twitter_username }}" style="
-color:#dddddd; target="_blank" title="Twitter">
-                       <i class="fa fa-twitter"></i>
-                     </span>
-</a></li>
-    {% endif %}
-                {% if site.instagram_username %}
-			<li>
-   <a href="https://instagram.com/{{ site.instagram_username }}" style="
-color:#dddddd; target="_blank" title="Instagram">
-                       <i class="fa fa-instagram"></i>
-                     </span>
-</a></li>
-    {% endif %}
-                    {% if site.flickr_username %}
-						<li>
-   <a href="https://flickr.com/photos/{{ site.flickr_username }}" style="
-color:#dddddd; target="_blank" title="Flickr">
-              <i class="fa fa-flickr"></i>
-                     </span>
- </a></li>	
-     {% endif %}
-                    {% if site.deviantart_username %}
-			<li>
-   <a href="http://{{ site.deviantart_username }}.deviantart.com" style="
-color:#dddddd; target="_blank" title="DeviantArt">
-<i class="fa fa-deviantart"></i> </span>
-</a></li>	
-    {% endif %}
-                    {% if site.github_username %}
-                <li>
-   <a href="https://github.com/{{ site.github_username }}" style="
-color:#dddddd; target="_blank" title="Github">
-              <i class="fa fa-github"></i>
-                     </span>
-                   {% endif %}
-<li>
-    <a href="mailto:{{ site.email }}" style="
-color:#dddddd; target="_blank" title="Email">
-              <i class="fa fa-envelope-o"></i></span>
-          </a> </li>
-	
-					
-		</ul>	
-	</div>
 
   
 <!-- jQuery -->
@@ -163,4 +84,3 @@ color:#dddddd; target="_blank" title="Email">
 
        </body>
     </html>
-
