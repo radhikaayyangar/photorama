@@ -38,12 +38,28 @@ images:
     .navbar-header .navbar-toggle {
         margin-right: 0; /* Specifically targets the toggle within navbar-header */
     }
-        /* Your CSS rules go here */
-        @media (max-width: 600px) {
-            .mobile-break {
-                display: inline;
-            }
+    /* Your CSS rules go here */
+    @media (max-width: 768px) {
+        .mobile-break {
+            display: inline;
         }
+    }
+        
+    @media (min-width: 768px) { /* Adjusts for desktop */
+      .title-above {
+        position: relative;
+        top: -20px; /* Adjust these values based on your layout */
+        right: -20px;
+      }
+    }
+
+    @media (max-width: 767px) { /* Adjusts for mobile */
+      .title-above {
+        position: relative;
+        top: -10px; /* Adjust these values based on your layout */
+        right: 0px;
+      }
+    }
     </style>
 
   
@@ -58,7 +74,11 @@ images:
 
 			<!-- WYSIWYG -->
 
+
 		<div class="position-absolute">
+          <div class="title-above">
+            <img src="/img/rads_photo.jpeg" alt="Description" class="circular-image">
+          </div>
           <h2 class="big no-margin">
           <strong>
             <span class="name-part" style="display: inline-block; max-width: 100%;">Radhika&#8226;</span>
