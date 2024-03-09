@@ -1,9 +1,9 @@
 # Site settings
-title: PHOTORAMA
+title: Radhika Ayyangar
 email: ""
-description: "Photo Journal"
-url: "https://sunbliss.github.io"
-baseurl: "/photorama"
+description: "Cg Artist Portfolio"
+url: "https://radhikaayyangar.github.io"
+baseurl: "/site"
 facebook_username: ""
 twitter_username: ""
 instagram_username: ""
@@ -15,7 +15,7 @@ share: true
 
 # Owner/author information
 owner:
-  name:   photorama
+  name:   site
   avatar: avatar.png
   favicon: favicon.ico
   info: photography website template
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://sunbliss.github.io/photorama/gallery/"  
-  - JOURNAL: "https://sunbliss.github.io/photorama/journal/"
-  - ABOUT: "https://sunbliss.github.io/photorama/about/"
+  - GALLERY: "https://radhikaayyangar.github.io/site/gallery/"  
+  - JOURNAL: "https://radhikaayyangar.github.io/site/journal/"
+  - ABOUT: "https://radhikaayyangar.github.io/site/about/"
 
 # All translation keys
 translations:
