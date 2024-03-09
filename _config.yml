@@ -33,8 +33,6 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://radhikaayyangar.com/gallery/"  
-  - JOURNAL: "https://radhikaayyangar.com/journal/"
   - ABOUT: "https://radhikaayyangar.com/about/"
 
 # All translation keys
