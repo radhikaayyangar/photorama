@@ -29,10 +29,10 @@ images:
   <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
     <style>
-        /* Adjusts the space for the navbar toggle button */
+    /* Adjusts the space for the navbar toggle button */
     .navbar-toggle {
-        margin-right: 0; /* Removes the margin to the right */
     }
+        margin-right: 0; /* Removes the margin to the right */
     
     /* Additional specificity might be needed if the above does not work, for example: */
     .navbar-header .navbar-toggle {
@@ -44,7 +44,14 @@ images:
             display: inline;
         }
     }
-        
+    .circular-image {
+      border-radius: 50%; /* This creates the circular shape */
+      width: 100px; /* Adjust based on your preference */
+      height: 100px; /* Ensure this is the same as the width for a perfect circle */
+      object-fit: cover; /* Ensures the image covers the area without stretching. Adjust as needed */
+      display: block; /* Optional, for centering if needed */
+      margin: 0 auto; /* Optional, for centering if needed */
+    }
     @media (min-width: 768px) { /* Adjusts for desktop */
       .title-above {
         position: relative;
