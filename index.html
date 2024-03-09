@@ -44,13 +44,31 @@ images:
             display: inline;
         }
     }
+    .position-absolute {
+      display: flex;
+      align-items: center; /* Aligns items vertically in the center */
+      gap: 20px; /* Adjusts the space between the image and the title */
+    }
     .circular-image {
       border-radius: 50%;
-      width: 150px; /* Updated size */
-      height: 150px; /* Updated size */
+      width: 150px; /* Adjust based on your preference */
+      height: 150px; /* Ensure this is the same as the width for a perfect circle */
       object-fit: cover;
-      display: block;
-      margin: 0 auto;
+    }
+
+    .title-container {
+      display: inline-block;
+    }
+
+    /* Additional styles to ensure text alignment and responsiveness */
+    @media (max-width: 768px) {
+      .position-absolute {
+        flex-direction: column;
+        text-align: left;
+      }
+      .circular-image {
+        margin-bottom: 20px; /* Adds space between the image and title on smaller screens */
+      }
     }
   </style>
 </head>
@@ -68,6 +86,7 @@ images:
           <div class="title-above">
             <img src="/img/rads_photo.jpeg" alt="Description" class="circular-image">
           </div>
+          
           <h2 class="big no-margin">
           <strong>
             <span class="name-part" style="display: inline-block; max-width: 100%;">Radhika&#8226;</span>
@@ -75,15 +94,12 @@ images:
             <span class="name-part" style="display: inline-block; max-width: 100%;">Ayyangar</span>
           </strong>
           </h2>
+          
 				  <h2>{{ page.subtitle }}</h2> 
-            <div class="entry-summary">
+          <div class="entry-summary">
 							<p>{{ page.description }}</p>
 						</div><br />
 			    </div>
-			
-			<!-- END WYSIWYG -->
-			
-	
 		</div><!-- END .wrapper -->
 		
 	</section>
