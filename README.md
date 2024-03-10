@@ -33,6 +33,7 @@ rbenv rehash
 ### Running Dev Server
 
 ```
-jekyll serve --config _config_dev.yml
+jekyll serve --config _config.yml,_config_dev.yml
 ```
 
+> NOTE: The way the above invocation of jekyll works is that it uses the `config.yml` as base and applies those params in `_config_dev.yml` as overrides.
