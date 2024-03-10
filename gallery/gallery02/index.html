@@ -5,7 +5,7 @@ description: "masonry"
 active: gallery
 header-img: "img/gallery-bg.jpg"
 album-title: "Game Art"
-images:
+image_gallery_1:
  - image_path: /gallery/archive/g02/alb1.jpg
    caption: Game Art
    copyright: © Radhika Ayyangar
@@ -24,6 +24,19 @@ images:
  - image_path: /gallery/archive/g02/alb6.jpg
    caption: Game Art
    copyright: © Radhika Ayyangar
+image_gallery_2:
+ - image_path: /gallery/archive/g02/gal2_img1.jpg
+   caption: Game Art
+   copyright: © Radhika Ayyangar
+ - image_path: /gallery/archive/g02/gal2_img2.jpg
+   caption: Game Art
+   copyright: © Radhika Ayyangar
+ - image_path: /gallery/archive/g02/gal2_img3.jpg
+   caption: Game Art
+   copyright: © Radhika Ayyangar
+ - image_path: /gallery/archive/g02/gal2_img4.jpg
+   caption: Game Art
+   copyright: © Radhika Ayyangar
 ---
 
 <html class="no-js" lang="en">
@@ -34,22 +47,22 @@ images:
     <body>
  
 	<section id="content" role="main">
-		<div class="wrapper">
+	<div class="wrapper">
 	<br><br>
 			<h2>{{page.album-title}}</h2>
 
 
-			<!-- Gallery __-->
+			<!-- Gallery 1-->
 			<div class="gallery masonry-gallery">
 		
-{% for image in page.images %}  		
+        {% for image in page.image_gallery_1 %}  		
 
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-						
+        <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+        <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+              
 					</header>	
 					<figcaption class='gallery-caption'>
 						<div class="entry-summary">
@@ -59,31 +72,81 @@ images:
 					</figcaption>
 				</figure>
 				
-{% endfor %}
-
+        {% endfor %}
 			</div>
+      <!-- END .gallery 1 -->
+      
+      <p>
+          These 3D rendered images enabled the game development team to better understand the mood, setting and environment of the game.
+      </p>
+      <ul>
+          <li>
+            Created all 3D assets and texture painted them thereby also providing base meshes and references for the low poly production quality models
+          </li>
+          <li>
+            Quick painting and post-production eﬀects over the rendered images to show environment, mood and look and feel of the game
+          </li>
+      </ul>
+		</div>
 
-		</div><!-- END .wrapper -->
-	</section>
+      <br />
+      
+			<!-- Gallery 2-->
+			<div class="gallery masonry-gallery">
+      {% for image in page.image_gallery_2 %}  		
 
-<!-- jQuery -->    
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- include image popups -->
-<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
-<script src="{{ site.url }}{{ site.baseurl }}/js/retina.min.js"></script>
-<!-- include Masonry -->
-<script src="{{ site.url }}{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
-<!-- include mousewheel plugins -->
-<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-<!-- include carousel plugins -->
-<script src="{{ site.url }}{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
-<!-- include svg line drawing plugin -->
-<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-<!-- include custom script -->
-<script src="{{ site.url }}{{ site.baseurl }}/js/scripts.js"></script>
-<!-- Modernizr -->
- <script src="{{ site.url }}{{ site.baseurl }}/js/modernizr.js"></script>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+        <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+              
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+        {% endfor %}
+        </div>
+        <!-- END .gallery 2 -->
+        <p>
+          Helion, a space arcade shooter made for the iOS platform. was a throwback to the simplistic addictive fun of arcade games. A modern-day visual treat, with lush artwork, BRDF shading and particle eﬀects pushed the device hardware to the limit.
+        </p>
+        <ul>
+          <li>
+            Created assets- 3D models, high-poly sculpts, environments, sprites and textures for Helion and created concept artwork for Darkrail and SuperWTF
+          </li>
+          <li>
+            Managed and guided a team of two artists
+          </li>
+          <li>
+            Worked alongside graphics programmers giving artistic feedback on shaders, particle systems, sprites and the game editor design interface.
+          </li>
+        <ul>
+    <!-- END .wrapper -->
+	  </section>
+
+    <!-- jQuery -->    
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- include image popups -->
+    <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/js/retina.min.js"></script>
+    <!-- include Masonry -->
+    <script src="{{ site.url }}{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+    <!-- include mousewheel plugins -->
+    <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+    <!-- include carousel plugins -->
+    <script src="{{ site.url }}{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+    <!-- include svg line drawing plugin -->
+    <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+    <!-- include custom script -->
+    <script src="{{ site.url }}{{ site.baseurl }}/js/scripts.js"></script>
+    <!-- Modernizr -->
+     <script src="{{ site.url }}{{ site.baseurl }}/js/modernizr.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function($) {
