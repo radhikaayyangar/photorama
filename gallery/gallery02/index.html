@@ -6,21 +6,21 @@ active: gallery
 header-img: "img/gallery-bg.jpg"
 album-title: "Game Art"
 image_gallery_1:
-  - image_path: /gallery/archive/g02/alb1.jpg
+  - image_path: /gallery/archive/g02/alb1
     caption: Game Art 1
     copyright: © Radhika Ayyangar
     row_start: 1
     row_span: 2
     col_start: 1
     col_span: 1
-  - image_path: /gallery/archive/g02/alb2.jpg
+  - image_path: /gallery/archive/g02/alb2
     caption: Game Art
     copyright: © Radhika Ayyangar
     row_start: 1
     row_span: 1
     col_start: 2
     col_span: 1
-  - image_path: /gallery/archive/g02/alb3.jpg
+  - image_path: /gallery/archive/g02/alb3
     caption: Game Art
     copyright: © Radhika Ayyangar
     row_start: 2
@@ -65,8 +65,8 @@ image_gallery_2:
                 {% for image in page.image_gallery_1 %}
                 <figure class="gallery-item" style="grid-row: {{ image.row_start }} / span {{ image.row_span }}; grid-column: {{ image.col_start }} / span {{ image.col_span }};">
                     <header class='gallery-icon'>
-                        <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-                            <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}">
+                        <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}.jpg" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+                            <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}_thumb.jpg">
                         </a>
                     </header>
                     <figcaption class='gallery-caption'>
