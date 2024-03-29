@@ -1,46 +1,59 @@
 ---
 layout: page
-title: "album"
-description: "masonry"
+title: "AR / VR"
+description: "AR / VR"
 active: gallery
-header-img: "img/gallery-bg.jpg"
-album-title: "my 5th album"
-images:
- - image_path: /gallery/archive/g05/bg1.jpg
-   caption: IMAGE TITLE
-   mfp-title: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g05/bg2.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
- - image_path: /gallery/archive/g05/bg3.jpg
-   caption: IMAGE TITLE
-   copyright: © photorama
+album-title: "AR / VR"
+gallery_1:
+ - image_path: /gallery/archive/g05/arvr1.jpg
+   caption: AR / VR
+   copyright: © Radhika Ayyangar
+ - image_path: /gallery/archive/g05/arvr2.jpg
+   caption: AR / VR
+   copyright: © Radhika Ayyangar
+ - image_path: /gallery/archive/g05/arvr3.jpg
+   caption: AR / VR
+   copyright: © Radhika Ayyangar
+ - image_path: /gallery/archive/g05/arvr4.jpg
+   caption: AR / VR
+   copyright: © Radhika Ayyangar
 ---
 
 <html class="no-js" lang="en">
 <head>
 	<meta content="charset=utf-8">
+  <style>
+    /* Adjusts the space for the navbar toggle button */
+    .navbar-toggle {
+        margin-right: 0; /* Removes the margin to the right */
+    }
+  </style>
 </head>
 
     <body>
  
 	<section id="content" role="main">
 		<div class="wrapper">
-	<br><br>
+	    <br><br>
 			<h2>{{page.album-title}}</h2>
-
-
-			<!-- Gallery __-->
+      <p>
+          Models created for use on Augmented Reality applications. Created in 3DS Max and Photoshop.
+          <br />
+          Some of the many assets I created, that were optimized for real-time interactive viewing on browser-based renderers.
+          <br />
+          These assets are in GLTF format, featuring low-polygon models supplemented with normal maps to convey high-frequency details. Additionally, they incorporate physically based materials designed to interact seamlessly with environmental lighting conditions.
+      </p>
+        
+			<!-- Gallery 1-->
 			<div class="gallery masonry-gallery">
 		
-{% for image in page.images %}  		
+{% for image in page.gallery_1 %}  		
 
-				<figure class="gallery-item">
+				<figure class="gallery-item col-2">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+            <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+            <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
 						
 					</header>	
 					<figcaption class='gallery-caption'>
@@ -52,30 +65,28 @@ images:
 				</figure>
 				
 {% endfor %}
-
 			</div>
-
-		</div><!-- END .wrapper -->
-	</section>
-
+     
+        <br />
+        <br />
 <!-- jQuery -->    
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
-<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
-<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
-<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<script src="{{ site.url }}{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
 <!-- include mousewheel plugins -->
-<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
 <!-- include carousel plugins -->
-<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
 <!-- include svg line drawing plugin -->
-<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
 <!-- include custom script -->
-<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/scripts.js"></script>
 <!-- Modernizr -->
- <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+ <script src="{{ site.url }}{{ site.baseurl }}/js/modernizr.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function($) {

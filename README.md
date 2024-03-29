@@ -1,7 +1,6 @@
 # Radhika Ayyangar's Portfolio Site
 
-Based on:
-![photorama](https://raw.githubusercontent.com/sunbliss/photorama/gh-pages/photorama_thumb.gif)
+Forked from Photorama
 
 ## Local devel
 
@@ -37,3 +36,12 @@ jekyll serve --config _config.yml,_config_dev.yml
 ```
 
 > NOTE: The way the above invocation of jekyll works is that it uses the `config.yml` as base and applies those params in `_config_dev.yml` as overrides.
+
+
+### Thumbnail Generation
+
+Install Imagemagick (v7+) and then:
+
+```
+for img in *.jpg; do magick "$img" -resize 50% "${img%.jpg}_thumb.jpg"; done
+```

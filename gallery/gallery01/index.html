@@ -1,105 +1,199 @@
 ---
 layout: page
 title: "Architectural Renders"
-description: "masonry"
+description: "Architectural Renders"
 active: gallery
-header-img: "img/gallery-bg.jpg"
 album-title: "Architectural Renders"
-images:
- - image_path: /gallery/archive/g01/01_archi.jpg
-   caption: Architectural Rendering
+gallery_1:
+ - image_path: /gallery/archive/g01/archi1.jpg
+   caption: Architectural Render
+   mfp-title: Archi Render
    copyright: © Radhika Ayyangar
- - image_path: /gallery/archive/g01/02_archi.jpg
-   caption: Architectural Rendering
+ - image_path: /gallery/archive/g01/archi2.jpg
+   caption: Architectural Render
    copyright: © Radhika Ayyangar
- - image_path: /gallery/archive/g01/03_archi.jpg
-   caption: Architectural Rendering
+ - image_path: /gallery/archive/g01/archi3.jpg
+   caption: Architectural Render
    copyright: © Radhika Ayyangar
- - image_path: /gallery/archive/g01/04_archi.jpg
-   caption: Architectural Rendering
+ - image_path: /gallery/archive/g01/archi4.jpg
+   caption: Architectural Render
    copyright: © Radhika Ayyangar
- - image_path: /gallery/archive/g01/05_archi.jpg
-   caption: Architectural Rendering
+gallery_2:
+ - image_path: /gallery/archive/g01/archi5.jpg
+   caption: Architectural Render
+   mfp-title: Archi Render
    copyright: © Radhika Ayyangar
- - image_path: /gallery/archive/g01/06_archi.jpg
-   caption: Architectural Rendering
+ - image_path: /gallery/archive/g01/archi6.jpg
+   caption: Architectural Render
    copyright: © Radhika Ayyangar
- - image_path: /gallery/archive/g01/07_archi.jpg
-   caption: Architectural Rendering
+ - image_path: /gallery/archive/g01/archi7.jpg
+   caption: Architectural Render
    copyright: © Radhika Ayyangar
- - image_path: /gallery/archive/g01/08_archi.jpg
-   caption: Architectural Rendering
+ - image_path: /gallery/archive/g01/archi8.jpg
+   caption: Architectural Render
+   copyright: © Radhika Ayyangar
+gallery_3:
+ - image_path: /gallery/archive/g01/archi9.jpg
+   caption: Architectural Render
+   mfp-title: Archi Render
+   copyright: © Radhika Ayyangar
+ - image_path: /gallery/archive/g01/archi10.jpg
+   caption: Architectural Render
+   copyright: © Radhika Ayyangar
+ - image_path: /gallery/archive/g01/archi11.jpg
+   caption: Architectural Render
+   copyright: © Radhika Ayyangar
+ - image_path: /gallery/archive/g01/archi12.jpg
+   caption: Architectural Render
    copyright: © Radhika Ayyangar
 ---
 
 <html class="no-js" lang="en">
 <head>
 	<meta content="charset=utf-8">
+  <style>
+    /* Adjusts the space for the navbar toggle button */
+    .navbar-toggle {
+        margin-right: 0; /* Removes the margin to the right */
+    }
+  </style>
 </head>
 
-<body>
+    <body>
+ 
 	<section id="content" role="main">
 		<div class="wrapper">
-	  <br \>
-    <br \>
-    <h2>{{page.album-title}}</h2>
-    <!-- Gallery __-->
-    <div class="gallery masonry-gallery">
-      {% for image in page.images %}  		
-				<figure class="gallery-item">
+	    <br><br>
+			<h2>{{page.album-title}}</h2>
+
+      <p>
+          3D renders created from floor plans and elevation drawings, commissioned by a New Zealand based client (msanz.com)
+          <br />
+          Created in 3DS Max, Vray and Photoshop.
+      </p>
+        
+			<!-- Gallery 1-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.gallery_1 %}  		
+
+				<figure class="gallery-item col-2">
 					<header class='gallery-icon'>
-            <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+
+            <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
             <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
 					</header>	
 					<figcaption class='gallery-caption'>
-						<div class="entry-summary" id="{{ image.caption }}">
+						<div class="entry-summary">
 							<h3>{{image.caption}}</h3>
 							<p>{{image.copyright}}</p>
 						</div>
 					</figcaption>
 				</figure>
-      {% endfor %}
+				
+{% endfor %}
 			</div>
+        
+      <p>
+          Following the construction of the base model and with a mandate for creative interpretation I crafted environments and props to complement the designs, integrating local elements for authenticity. 
+          I then rendered the project with carefully chosen camera angles and suitable lighting that accentuated its architectural charm.
+      </p>
+
+      <!-- Gallery 2-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.gallery_2 %}  		
+
+				<figure class="gallery-item col-2">
+					<header class='gallery-icon'>
+
+            <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+            <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+			</div>
+
 		</div><!-- END .wrapper -->
+
+      <p>
+          Since photo-realism was a requirement in this project, the V-Ray raytracer was used to render the images, allowing for advanced lighting and shadow effects. 
+      </p>
+
+      <!-- Gallery 3-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.gallery_3 %}  		
+
+				<figure class="gallery-item col-2">
+					<header class='gallery-icon'>
+
+            <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+            <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+			</div>
+
+		</div><!-- END .wrapper -->
+
+
 	</section>
 
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- include image popups -->
-  <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<!-- jQuery -->    
 
-  <script type="text/javascript">
-        $(document).ready(function($) {
-          $('a.popup').magnificPopup({
-           type: 'image',
-          gallery:{
-               enabled:true,
-               navigatebyimgclick: true,
-               preload: [0,1] // will preload 0 - before current, and 1 after the current image
-             },
-          image: {
-            titleSrc: function(item) {
-                    return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
-                  }
-              }
-                // other options
-            });
-          }
-      );
-  </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.url }}{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.url }}{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.url }}{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.url }}{{ site.baseurl }}/js/modernizr.js"></script>
 
-  <script src="{{ site.url }}{{ site.baseurl }}/js/retina.min.js"></script>
-  <!-- include Masonry -->
-  <script src="{{ site.url }}{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
-  <!-- include mousewheel plugins -->
-  <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-  <!-- include carousel plugins -->
-  <script src="{{ site.url }}{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
-  <!-- include svg line drawing plugin -->
-  <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-  <!-- include custom script -->
-  <script src="{{ site.url }}{{ site.baseurl }}/js/scripts.js"></script>
-  <!-- Modernizr -->
-  <script src="{{ site.url }}{{ site.baseurl }}/js/modernizr.js"></script>
-</body>
-  
-</html>
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+    <br />
+    <br />
+</body></html>

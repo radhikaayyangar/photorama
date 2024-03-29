@@ -1,0 +1,9 @@
+- [ ] Remove white lines in the archi gallery images
+- [ ] Remove white lines from the Chthulu images
+- [ ] Make the home page game art pic more high res
+- [ ] Change of font size of the preview hover in home page
+- [x] Remove unused images from all the unused gallery folders
+- [x] Remove the index.html for /gallery
+- [ ] Change font and color of 'Radhika Ayyangar' in home page
+- [ ] Fix glitches in the hamburger menu
+- [ ] Maybe add home link also in hamburger
