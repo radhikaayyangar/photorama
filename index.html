@@ -4,138 +4,162 @@ title: "Portfolio"
 description: "archive"
 active: gallery
 images:
- - image_path: /gallery/albums/alb01.jpg
-   gallery-folder: /gallery/gallery01/
-   gallery-name: Architectural Renders
- - image_path: /gallery/albums/alb02_alt.jpg
-   gallery-folder: /gallery/gallery02/
-   gallery-name: Game Art
- - image_path: /gallery/albums/alb03.jpg
-   gallery-folder: /gallery/gallery03/
-   gallery-name: 3D Prints
- - image_path: /gallery/albums/alb04.jpg
-   gallery-folder: /gallery/gallery04/
-   gallery-name: Sculpts
- - image_path: /gallery/albums/alb05.jpg
-   gallery-folder: /gallery/gallery05/
-   gallery-name: AR / VR
+  - image_path: /gallery/albums/alb01.jpg
+    gallery-folder: /gallery/gallery01/
+    gallery-name: Architectural Renders
+  - image_path: /gallery/albums/alb02_alt.jpg
+    gallery-folder: /gallery/gallery02/
+    gallery-name: Game Art
+  - image_path: /gallery/albums/alb03.jpg
+    gallery-folder: /gallery/gallery03/
+    gallery-name: 3D Prints
+  - image_path: /gallery/albums/alb04.jpg
+    gallery-folder: /gallery/gallery04/
+    gallery-name: Sculpts
+  - image_path: /gallery/albums/alb05.jpg
+    gallery-folder: /gallery/gallery05/
+    gallery-name: AR / VR
 ---
+
 
 <html class="no-js" lang="en">
 <head>
-	<meta content="charset=utf-8">
-    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}{{ "/css/selena.css" | prepend: site.baseurl }}">
-    
-    <style>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}{{ "/css/selena.css" | prepend: site.baseurl }}">
+
+  <style>
     /* Adjusts the space for the navbar toggle button */
     .navbar-toggle {
-        margin-right: 0; /* Removes the margin to the right */
+      margin-right: 0; /* Removes the margin to the right */
     }
-    
+
     /* Additional specificity might be needed if the above does not work, for example: */
     .navbar-header .navbar-toggle {
-        margin-right: 0; /* Specifically targets the toggle within navbar-header */
+      margin-right: 0; /* Specifically targets the toggle within navbar-header */
     }
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: left;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: left;
     }
     .text-content, .image-content {
-        flex: 1 1 50%;
+      flex: 1 1 50%;
     }
     .image-content img {
-        width: 100%;
-        max-width: 200px;
-        border-radius: 15px;
-        margin: auto;
-        display: block;
+      width: 100%;
+      max-width: 200px;
+      border-radius: 15px;
+      margin: auto;
+      display: block;
     }
     @media (max-width: 768px) {
-        .container {
-            flex-direction: column;
-            text-align: left;
+      .container {
+        flex-direction: column;
+        text-align: left;
+      }
+      .image-content img {
+        border-radius: 50%;
+        max-width: 120px;
+      }
+    }
+    img.main_logo_img {
+      float: left;
+      margin-right: 20px; /* Add some space between the image and the following content */
+    }
+    a.main_about_link {
+      float: right;
+      margin-left: 20px; /* Add some space between the image and the following content */
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .main_logo_img {
+        /* You can set a default size for larger screens if needed */
+        vertical_align: top;
+    }
+    .header a {
+        text-decoration: none;
+        /* Additional styling for the link */
+    }
+    /* Media query for screens that are less than 768 pixels wide */
+    @media (max-width: 768px) {
+        .main_logo_img {
+            width: 90%; /* Adjust the width as needed for smaller screens */
+            max-width: 200px; /* You can also set a max-width to ensure it doesn't get too small */
         }
-        .image-content img {
-            border-radius: 50%;
-            max-width: 120px;
+        .header a {
+          font-size: 14px; 
+          vertical_align: top;
         }
     }
   </style>
 </head>
 
-    <body class="gallery">
-    
-<section id="content" role="main">
-		  
-<section>
-    <div class="container">
-        <div class="text-content">
-            <h2><strong>Radhika Ayyangar</strong></h2>
-            CG Artist
-        </div>
+<body class="gallery">
+
+<section id="contenta" role="maina">
+  <section>
+    <div class="header">
+        <img class="main_logo_img" src="{{ site.url }}{{ site.baseurl }}/logo.svg" alt="Radhika Ayyangar's Portfolio" />
+        <a href="{{ site.url }}{{ site.baseurl }}/about">ABOUT</a>
     </div>
-</section>
-      <br /> 
-      <br /> 
-      
-	<section id="content" role="main">
-		<div class="wrapper">
-	
-			
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-				
-{% for image in page.images %}  	
+    <div class="container">
+      <!-- <div class="text-content"> -->
+      <!--     <h2><strong>Radhika Ayyangar</strong></h2> -->
+      <!--     CG Artist -->
+      <!-- </div> -->
+    </div>
+  </section>
 
-	               <figure class="gallery-item">
-                         <figure class="effect-selena">
-					<header class='gallery-icon'>
-		       
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+  <br /> 
+  <br /> 
+  <section id="content" role="main">
+    <div class="wrapper">
+      <!-- Gallery -->
+      <div class="gallery masonry-gallery">
+        {% for image in page.images %}
+          <figure class="gallery-item">
+            <figure class="effect-selena">
+              <header class='gallery-icon'>
+                <a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+                  <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" alt="{{ image.gallery-name }}">
+                </a>
+              </header>	
+              <figcaption class='gallery-caption'>
+                <div class="entry-summary">
+                  <h3>{{ image.gallery-name }}</h3>
+                  <p>{{ image.gallery-date }}</p>
+                </div>
+              </figcaption>
+            </figure>
+          </figure>
+        {% endfor %}
+      </div>
+    </div><!-- END .wrapper -->
+  </section>
 
-					</header>	
-					<figcaption class='gallery-caption'>
-						<div class="entry-summary">
-							<h3>{{image.gallery-name}}</h3>
-							<p>{{image.gallery-date}}</p>
-						</div>
-					</figcaption>
-                       </figure>
-				</figure>
-							
-{% endfor %}		
-				
-			</div>
-			
-		</div><!-- END .wrapper -->
-	</section>
+  <br>
 
+  <!-- jQuery -->    
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="{{ site.url }}{{ site.baseurl }}/js/retina.min.js"></script>
+  <!-- include Masonry -->
+  <script src="{{ site.url }}{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
+  <!-- include mousewheel plugins -->
+  <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+  <!-- include carousel plugins -->
+  <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.tinycarousel.min.js"></script>
+  <!-- include svg line drawing plugin -->
+  <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+  <!-- include custom script -->
+  <script src="{{ site.url }}{{ site.baseurl }}/js/scripts.js"></script> 
+  <!-- Modernizr -->
+  <!-- <script src="{{ site.url }}{{ site.baseurl }}/js/modernizr.js"></script> -->
 
-<br>
-
-<!-- jQuery -->    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="{{ site.url }}{{ site.baseurl }}/js/retina.min.js"></script>
-<!-- include Masonry -->
-<script src="{{ site.url }}{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
-<!-- include mousewheel plugins -->
-<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-<!-- include carousel plugins -->
-<script src="{{ site.url }}{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
-<!-- include svg line drawing plugin -->
-<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-<!-- include custom script -->
-<script src="{{ site.url }}{{ site.baseurl }}/js/scripts.js"></script>
-<!-- Modernizr -->
- <script src="{{ site.url }}{{ site.baseurl }}/js/modernizr.js"></script>
-
-<br />
-<br />
+  <br />
+  <br />
 </body>
-  
 </html>
-

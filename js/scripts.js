@@ -118,7 +118,7 @@
 	
 		// masonry gallery
 		var $masonry_gallery = jQuery('.masonry-gallery.gallery');
-		if ( $masonry_gallery.length > 0 ) {
+		if ( $masonry_gallery.length > 0 && window.innerWidth > 768 ) {
 
 			$masonry_gallery.each( function(index, element) {
 				var $masonry_items = $(element).find('.gallery-item');
