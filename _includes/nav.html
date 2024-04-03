@@ -1,8 +1,12 @@
 <section>
   <div class="header">
+      {% if page.title != "Portfolio" %}
       <a href="{{ site.url }}{{ site.baseurl }}/" class="logo-home-link">
         <img class="main_logo_img" src="{{ site.url }}{{ site.baseurl }}/logo.svg" alt="Radhika Ayyangar's Portfolio" />
       </a>
+      {% else %}
+        <img class="main_logo_img" src="{{ site.url }}{{ site.baseurl }}/logo.svg" alt="Radhika Ayyangar's Portfolio" />
+      {% endif %}
       {% if page.title != "About" %}
       <a href="{{ site.url }}{{ site.baseurl }}/about">ABOUT</a>
       {% endif %}

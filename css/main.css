@@ -441,12 +441,16 @@ body {
     max-width: 120px;
   }
 }
-a.logo-home-link {
+
+a.logo-home-link:hover {
   cursor: pointer !important;
 }
 img.main_logo_img {
   float: left;
   margin-right: 20px; /* Add some space between the image and the following content */
+}
+img.main_logo_img:hover {
+  cursor: pointer !important;
 }
 a.main_about_link {
   float: right;
