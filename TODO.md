@@ -10,6 +10,7 @@
 - [ ] On mobile, we should probably show the page titles outside?
 - [ ] About page needs a link back home
 - [ ] For some reason, the mouse hover icon on images is no longer hand icon
+- [ ] We should likely change the gallery links for g01/g02... etc. to use names like ar-vr for SEO
 
 ---
 
