@@ -1,6 +1,7 @@
-- [ ] Navbar - remove hamburger and just show 'About'
-- [ ] Make logo appear on all pages but home page
-- [ ] Change the font of 'About' link
+- [x] Navbar - remove hamburger and just show 'About'
+- [x] Make logo appear on all pages
+- [x] Change the font of 'About' link
+- [ ] Fix the hover icon on logo
 - [ ] Change the color and font of the text that appears on image hover in homepage
 - [ ] Change color and font of page top titles
 - [ ] Body text font change

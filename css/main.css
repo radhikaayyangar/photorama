@@ -441,8 +441,8 @@ body {
     max-width: 120px;
   }
 }
-logo-home-link {
-  cursor: pointer;
+a.logo-home-link {
+  cursor: pointer !important;
 }
 img.main_logo_img {
   float: left;
