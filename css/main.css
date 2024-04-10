@@ -468,7 +468,7 @@ a.main_about_link {
 .header a {
     text-decoration: none;
     /* Additional styling for the link */
-    color: #ce562a;
+    color: #ffffff;
 }
 /* Media query for screens that are less than 768 pixels wide */
 @media (max-width: 768px) {

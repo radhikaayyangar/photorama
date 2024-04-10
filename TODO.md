@@ -14,7 +14,7 @@
 - [ ] We should likely change the gallery links for g01/g02... etc. to use names like ar-vr for SEO
 - [ ] Feel the mobile gallery item names not clearly visible, too much white on white
 - [ ] Reduce the dark borders between images in desktop
-- [ ] Give a slight background highlight for the gallery titles to make it better visible on the images
+- [x] Give a slight background highlight for the gallery titles to make it better visible on the images
 - [ ] Make mobile gallery icons uniform aspect ratio
 
 ---
