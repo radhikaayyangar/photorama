@@ -11,6 +11,10 @@
 .gallery-item:hover .gallery-caption .entry-summary { opacity: 1; }
 .gallery-caption h3, .gallery-caption p { -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; padding: 0; margin: 0; }
 .gallery-item:hover .gallery-caption h3, .gallery-item:hover .gallery-caption p { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+@media screen and (max-width: 640px) and (orientation: portrait) {
+.gallery-item .gallery-caption .entry-summary { opacity: 1; }
+}
+
 .gallery-caption h3  { font-weight: bold; text-transform: uppercase; font-size: .9em; letter-spacing: 0.05em; }
 .gallery-caption .entry-summary > p { font-family: Times, serif; font-style: italic; font-size: .8em; opacity: .8; }
 
@@ -19,8 +23,8 @@
 #gallery-filter ul li { display: inline-block; vertical-align: bottom; margin: 0 2em 2em 0; }
 #gallery-filter ul li a { display: block; color: #222; position: relative; }
 #gallery-filter ul li a:hover {  }
-#gallery-filter ul li a.active {  }
 #gallery-filter ul li a::after { content: ""; display: block; border-bottom: 2px solid #EA8E00; width: 0; position: absolute; bottom: 0; left: 0; right: 0; 
+#gallery-filter ul li a.active {  }
 -webkit-transform: scale(0,1); transform: scale(0,1);
 -webkit-transform-origin: 50% 0; transform-origin: 50% 0;
 -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; }
