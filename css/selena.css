@@ -8,7 +8,7 @@ figure.effect-selena {
 }
 
 figure.effect-selena img {
-     cursor: default;
+  cursor: default;
 	opacity: 1;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
@@ -19,6 +19,7 @@ figure.effect-selena img {
 figure.effect-selena:hover img {
 	-webkit-transform: scale3d(0.95,0.95,1);
 	transform: scale3d(0.95,0.95,1);
+  cursor: pointer;
 }
 
 figure.effect-selena h2 {
