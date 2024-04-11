@@ -75,7 +75,7 @@
 #grid-changer svg { fill: #222; }
 
 .masonry-gallery.gallery { z-index: 0; width: 102.2%; margin: 0 0 1em 0; }
-.masonry-gallery .gallery-item { margin: 0 2% 1.3em 0; background: transparent; width: 31.3%; }
+.masonry-gallery .gallery-item { margin: 0 2% 2% 0; background: transparent; width: 31.3%; }
 @media screen and (max-width: 640px) and (orientation: portrait) {
   .masonry-gallery .gallery-item { margin: 0 0 2.5% 0; background: transparent; width: 31.3%; }
 }
@@ -172,10 +172,10 @@ img.mfp-img { padding: 0; }
 .mfp-container button { box-shadow: none; background: none; }
 .mfp-container button.mfp-arrow-right { background: transparent url("../img/right-arrow.svg") no-repeat center center; }
 .mfp-container button.mfp-arrow-right::before, .mfp-container button.mfp-arrow-right::after { display: none; }
-.mfp-container button.mfp-arrow-left { background: transparent url("../img/left-arrow.svg") no-repeat center center; }
 .mfp-container button.mfp-arrow-left::before, .mfp-container button.mfp-arrow-left::after { display: none; }
 
 
+.mfp-container button.mfp-arrow-left { background: transparent url("../img/left-arrow.svg") no-repeat center center; }
 /*galleries adapted*/
 /*.masonry-gallery .gallery-item { width: 30% !important; }*/
 		
