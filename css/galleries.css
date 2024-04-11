@@ -27,6 +27,7 @@
   transition: transform 0.35s; 
   padding: 0; 
   margin: 0; 
+  letter-spacing: 0.11em;
 }
 .gallery-item:hover .gallery-caption h3, .gallery-item:hover .gallery-caption p { 
   -webkit-transform: translate3d(0,0,0); 
@@ -42,11 +43,13 @@
     opacity: 1; 
     background-color: rgba(0, 0, 0, .75);  
   }
-  .gallery-caption h3, .gallery-caption p { 
-  }
 }
 
 .gallery-caption h3  { font-family: 'Montserrat', font-weight: 400; text-transform: uppercase; font-size: .9em; letter-spacing: 0.11em; }
+@media screen and (max-width: 640px) and (orientation: portrait) {
+  .gallery-caption h3 { font-size: 11px; letter-spacing: 0.11em; }
+}
+ 
 .gallery-caption .entry-summary > p { font-family: 'Montserrat', serif; font-style: italic; font-size: .8em; opacity: .8; }
 
 #gallery-filter { display: block; position: relative; top: 12px; }
@@ -89,7 +92,7 @@
 .masonry-gallery .gallery-item.col-5 .gallery-caption { font-size: .85em; }
 .masonry-gallery .gallery-caption h3 { -webkit-transform: translate3d(0,-20px,0); transform: translate3d(0,-20px,0); margin-bottom: .5em; }
 @media screen and (max-width: 640px) and (orientation: portrait) {
-  .masonry-gallery .gallery-caption h3 { -webkit-transform: translate3d(0,0px,0); transform: translate3d(0,0px,0); margin-bottom: .5em; }
+  .masonry-gallery .gallery-caption h3 { -webkit-transform: translate3d(0,0px,0); transform: translate3d(0,0px,0); margin-bottom: 0; }
 }
 .masonry-gallery .gallery-caption p { -webkit-transform: translate3d(0,20px,0); transform: translate3d(0,20px,0); padding-bottom: 1em; }
 
