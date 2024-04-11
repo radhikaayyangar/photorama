@@ -137,7 +137,7 @@ button::-moz-focus-inner {
   color: #FFF;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial, Baskerville, monospace; }
+  font-family: 'Montserrat', Arial, Baskerville, monospace; }
   .mfp-close:hover,
   .mfp-close:focus {
     opacity: 1; }
@@ -290,7 +290,9 @@ img.mfp-img {
   line-height: 18px;
   color: #F3F3F3;
   word-wrap: break-word;
-  padding-right: 36px; }
+  padding-right: 36px; 
+  font-size: 10px;
+}
 
 .mfp-image-holder .mfp-content {
   max-width: 100%; }

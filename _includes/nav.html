@@ -1,14 +1,20 @@
 <section>
   <div class="header">
+      <div class="main-logo-text">
       {% if page.title != "Portfolio" %}
-      <a href="{{ site.url }}{{ site.baseurl }}/" class="logo-home-link">
-        <img class="main_logo_img" src="{{ site.url }}{{ site.baseurl }}/logo.svg" alt="Radhika Ayyangar's Portfolio" />
-      </a>
-      {% else %}
-        <img class="main_logo_img" src="{{ site.url }}{{ site.baseurl }}/logo.svg" alt="Radhika Ayyangar's Portfolio" />
+        <a href="{{ site.url }}{{ site.baseurl }}">
       {% endif %}
+          <div class="main-logo-text-holder">
+            <span class="main-logo-text-holder-name">RADHIKA AYYANGAR</span>
+            <span class="main-logo-text-holder-role">CG ARTIST</span>
+          </div>
+      {% if page.title != "Portfolio" %}
+        </a>
+      {% endif %}
+      </div>
+      
       {% if page.title != "About" %}
-      <a href="{{ site.url }}{{ site.baseurl }}/about">ABOUT</a>
+      <a class="main-about-link" href="{{ site.url }}{{ site.baseurl }}/about">ABOUT</a>
       {% endif %}
   </div>
   <div class="container">

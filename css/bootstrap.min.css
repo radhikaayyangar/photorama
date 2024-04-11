@@ -1656,12 +1656,12 @@ h6 small {
 
 .h1,
 h1 {
-  font-size: 36px
+  font-size: 18px
 }
 
 .h2,
 h2 {
-  font-size: 30px
+  font-size: 18px
 }
 
 .h3,
@@ -1685,7 +1685,8 @@ h6 {
 }
 
 p {
-  margin: 0 0 10px
+  margin: 0 0 10px;
+  font-size: 15px; 
 }
 
 .lead {
@@ -7278,7 +7279,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

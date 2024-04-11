@@ -13,11 +13,11 @@
 .gallery-item:hover .gallery-caption h3, .gallery-item:hover .gallery-caption p { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); display: inline; }
 @media screen and (max-width: 640px) and (orientation: portrait) {
   .gallery-item .gallery-caption .entry-summary { opacity: 1; background-color: rgba(0, 0, 0, .5);  }
-  .gallery-item .gallery-caption h3, .gallery-item .gallery-caption p { display: inline; } 
+  .gallery-item .gallery-caption h3, .gallery-item .gallery-caption p { display: inline; text-align: right; } 
 }
 
-.gallery-caption h3  { font-weight: bold; text-transform: uppercase; font-size: .9em; letter-spacing: 0.05em; }
-.gallery-caption .entry-summary > p { font-family: Times, serif; font-style: italic; font-size: .8em; opacity: .8; }
+.gallery-caption h3  { font-family: 'Montserrat', font-weight: 400; text-transform: uppercase; font-size: .9em; letter-spacing: 0.11em; }
+.gallery-caption .entry-summary > p { font-family: 'Montserrat', serif; font-style: italic; font-size: .8em; opacity: .8; }
 
 #gallery-filter { display: block; position: relative; top: 12px; }
 #gallery-filter ul {  list-style: none; padding: 0; margin: 0 0 .3em 0; font-size: .8em; letter-spacing: 0.05em; }
